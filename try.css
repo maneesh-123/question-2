@@ -1,0 +1,226 @@
+header{
+
+
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    text-decoration: solid;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    background-color: black;
+    color: white; 
+    padding: 10px;
+    z-index: 100;
+    
+    
+
+}
+
+h1{
+    border: solid 8px white;
+    border-radius: 1000px;
+    padding: 6px 12px;
+    display: inline-block;
+
+}
+
+html {
+    background-image: url('wp.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1100px;
+    background-position: center center;
+  }
+
+  nav {
+    background-color: #333; 
+    height: 50px;
+    display: flex; 
+    justify-content: center; 
+    position: absolute;
+    top: 135px;
+    left: 570px;
+    
+  }
+  
+  nav ul {
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    text-align: center;
+  }
+  
+  nav ul li {
+    margin: 0 10px; 
+  }
+  
+  nav ul li a {
+    color: #fff; 
+    text-decoration: none; 
+    font-size: 18px; 
+    display: block; 
+    padding: 15px 20px; 
+    border-radius: 5px; 
+  }
+  
+  nav ul li a:hover {
+    background-color: #555; 
+  }
+
+  h2{
+    text-align: left;
+    position: absolute;
+    top: 300px;
+    font-size: 60px;
+
+  }
+
+  p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    position: absolute;
+    top: 450px;
+  }
+
+  .movingtext{
+    padding: 20px;
+    animation: scroll-left 15s linear infinite;  
+    font-size: 20 px;  
+    position: absolute;  
+    top: 200px;
+}
+@keyframes scroll-left {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+}
+
+nav{
+    position: fixed;
+    z-index: 1;
+  }
+
+
+  .banner{
+    position: absolute;
+    left: 400px;
+    top: 700px;
+    
+    
+}
+
+.banner img{
+    
+    width: 100%;
+    height:350px;
+    margin-bottom: 40px;
+    z-index: 1;
+
+
+
+    
+}
+
+.banner{
+    list-style: none;
+}
+
+
+@media only screen and (max-width: 768px) {
+    
+    h2 {
+      top: 150px;
+      font-size: 40px;
+    }
+    
+
+    .description {
+      top: 550px;
+    }
+    
+    
+    .banner {
+      top: 1000px;
+      
+    }
+    
+    
+    nav ul li a {
+      font-size: 14px;
+      
+      text-align: left;
+    }
+    
+   
+    nav {
+      top: 80px;
+      left: 50px;
+    }
+  }
+  
+  
+  @media only screen and (max-width: 480px) {
+    
+    h2 {
+      top: 150px;
+      font-size: 30px;
+    }
+    
+    
+    .description {
+      top: 400px;
+    }
+    
+    
+    .banner {
+        
+      top: 900px;
+      
+    }
+    
+    
+    nav ul li a {
+      font-size: 12px;
+    }
+    
+    
+    nav {
+      top: 60px;
+      left: 20px;
+    }
+
+    .banner img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 40px;
+    }
+  }
+  
+  
+  
+  @media only screen and (max-width: 768px) {
+    .banner {
+      left: 0;
+      top: 900px;
+    }
+    
+    .banner img {
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .banner {
+      top: 1100px;
+    }
+  }
+
+
+  
+  
